@@ -1,3 +1,4 @@
+
 import re  #正規表現を使用するための標準ライブラリ
 from spotify_client import SpotifyClient
 
@@ -13,5 +14,6 @@ def is_japanese_song(track: dict, client: SpotifyClient) -> bool:
     jp_genres = ['j-pop', 'anime', 'vocaloid', 'j-rock', 'kayokyoku', 'j-r&b', 'j-rap', 'japanese indie']
     if any(genre for genre in artist_genres if genre in jp_genres):
         return True
+
 
     return False

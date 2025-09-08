@@ -1,3 +1,4 @@
+
 #API関連の処理モジュール
 
 import spotipy
@@ -68,4 +69,5 @@ class SpotifyClient:
 
 #get_track_ids_from_liked_playlist()のテスト
 #print(len(SpotifyClient().get_track_ids_from_liked_playlist()))
+
 #print(SpotifyClient().get_track_ids_from_liked_playlist())

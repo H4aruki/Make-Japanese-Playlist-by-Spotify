@@ -1,3 +1,4 @@
+
 from spotify_client import SpotifyClient
 from song_judgement import is_japanese_song
 import config
