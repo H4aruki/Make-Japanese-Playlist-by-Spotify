@@ -1,11 +1,5 @@
-<<<<<<< HEAD
+
 config.py
 .venv/
 venv/
 .cache/
-=======
-config.py
-.venv/
-venv/
-.cache/
->>>>>>> b0646e150b5b81471fbe004227e4094c14f0030f
