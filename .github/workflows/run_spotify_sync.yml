@@ -39,6 +39,6 @@ jobs:
           # Settings > Secrets で登録した情報を環境変数として渡す
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-          playlist_id: ${{ secrets.PLAYLIST_ID }}
-          Japanese_playlist_id: ${{ secrets.JAPANESE_PLAYLIST_ID }}
+          PLAYLIST_ID: ${{ secrets.PLAYLIST_ID }}
+          JAPANESE_PLAYLIST_ID: ${{ secrets.JAPANESE_PLAYLIST_ID }}
         run: python main2.py 
