@@ -33,7 +33,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install spotipy
 
-      # 4. Pythonスクリプトを実行
+      # 4. Spotipy cache fileを作成
+      - name: Create Spotipy cache file
+        env:
+          # SPOTIPY_CACHEという名前のSecretを読み込む
+          SPOTIPY_CACHE_CONTENT: ${{ secrets.SPOTIPY_CACHE }}
+        # Secretの内容を.cacheファイルに書き出す
+        run: echo "$SPOTIPY_CACHE_CONTENT" > .cache
+
+      # 5. Pythonスクリプトを実行
       - name: Run Python script
         env:
           # Settings > Secrets で登録した情報を環境変数として渡す
