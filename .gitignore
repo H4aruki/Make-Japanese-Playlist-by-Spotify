@@ -2,4 +2,4 @@
 config.py
 .venv/
 venv/
-.cache/
+.cache
